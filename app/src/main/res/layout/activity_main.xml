@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/simple_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pref Simple UI"/>
+    <Button
+        android:id="@+id/fancy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pref fancy UI"
+        android:layout_toRightOf="@+id/simple_btn"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/ex_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simple_btn"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:text="This is a sample line suggesting the way the UI looks after you choose your preference"/>
+    <TextView
+        android:id="@+id/status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:text="No Preferences Found"
+        android:padding="20dp"/>
+</RelativeLayout>
